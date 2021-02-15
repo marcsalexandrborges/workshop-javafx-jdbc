@@ -25,8 +25,16 @@ public class Utils {
 		try {
 		return Integer.parseInt(str);
 		
+		}catch	(NumberFormatException e) {
+			return null;
 		}
-		catch	(NumberFormatException e) {
+	}
+	
+	public static Double tryParseToDouble(String str) {
+		try {
+		return Double.parseDouble(str);
+		
+		}catch	(NumberFormatException e) {
 			return null;
 		}
 	}
